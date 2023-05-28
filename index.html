@@ -1,168 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Movie Diary</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@shower/ribbon/styles/styles.css"
+    />
+    <style>
+      .shower {
+        --slide-ratio: calc(16 / 9);
+        --color-key: #2196f3;
+      }
+    </style>
+  </head>
 
-<head>
-  <title>Movie Diary</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
-  </link>
-  <style>
-    .shower {
-      --slide-ratio: calc(16 / 9);
-      --color-key: #2196f3;
-    }
+  <body class="shower list">
+    <header class="caption">
+      <h1>Система мониторинга выхода кинопремьер</h1>
+      <p>
+        <a href="https://github.com/dkrasiev" target="_blank">
+          Красиев Дмитрий Александрович
+        </a>
+      </p>
+    </header>
 
-    .iframe-container {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      padding-top: 56.25%;
-    }
+    <section class="slide">
+      <h2>
+        Система мониторинга выхода<br />
+        кинопремьер
+      </h2>
 
-    /* Then style the iframe to fit in the container div with full height and width */
-    .iframe-container>iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
+      <p>
+        Министерство образования и науки Самарской области
+        <br />
+        ГАПОУ СО «Самарский государственный колледж»
+      </p>
 
-    .without-padding {
-      padding: 0;
-    }
-  </style>
-</head>
+      <p>
+        Работу выполнил:
+        <br />
+        Выпускник ГАПОУ СО «СГК»
+        <br />
+        Красиев Дмитрий Александрович
+      </p>
+    </section>
 
-<body class="shower list">
-  <header class="caption">
-    <h1>Система мониторинга выхода кинопремьер</h1>
-    <p>Красиев Дмитрий Александрович</p>
-  </header>
+    <section class="slide">
+      <img class="place" style="max-height: 100%" src="images/qr-code.svg" />
+    </section>
 
-  <section class="slide">
-    <h2>
-      Система мониторинга выхода<br />
-      кинопремьер
-    </h2>
-
-    <p>
-      Министерство образования и науки Самарской области
-      <br />
-      ГАПОУ СО «Самарский государственный колледж»
-    </p>
-
-    <p>
-      Проект выполнил:
-      <br />
-      Выпускник ГАПОУ СО «СГК»
-      <br />
-      Красиев Дмитрий Александрович
-    </p>
-  </section>
-
-  <section class="slide">
-    <img class="place" style="max-height: 100%" src="images/qr-code.svg" />
-  </section>
-
-  <section class="slide">
-    <div class="columns two">
-      <div>
-        <h2>
-          Объект исследования
-        </h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <section class="slide">
+      <div class="columns two">
+        <div>
+          <h2>Объект исследования</h2>
+          <p>Web-сервис для предприятия</p>
+        </div>
+        <div>
+          <h2>Предмет исследования</h2>
+          <p>Разработка Web-сервиса для мониторинга выхода кинопремьер</p>
+        </div>
       </div>
-      <div>
-        <h2>
-          Предмет исследования
-        </h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    </section>
+
+    <section class="slide">
+      <div class="columns two">
+        <div>
+          <h2>Цель</h2>
+          <p>Упростить поиск и отслеживание новинок кино</p>
+        </div>
+
+        <div>
+          <h2>Задачи</h2>
+          <ul>
+            <li>Lorem, ipsum.</li>
+            <li>Est, vitae!</li>
+            <li>Quibusdam, dolores.</li>
+            <li>Non, labore?</li>
+            <li>Corrupti, accusamus.</li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="slide">
-    <div class="columns two">
-      <div>
-        <h2>
-          Цель
-        </h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, laudantium?</p>
-      </div>
+    <section class="slide">
+      <h2>Использованные технологии</h2>
+      <ul>
+        <li>SvelteKit (JavaScript)</li>
+        <li>Nodemailer (JavaScript)</li>
+        <li>PocketBase (Go)</li>
+        <li>RabbitMQ (Erlang)</li>
+        <li>Redis (C)</li>
+      </ul>
+    </section>
 
-      <div>
-        <h2>
-          Задачи
-        </h2>
-        <ul>
-          <li>Lorem, ipsum.</li>
-          <li>Est, vitae!</li>
-          <li>Quibusdam, dolores.</li>
-          <li>Non, labore?</li>
-          <li>Corrupti, accusamus.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    <section class="slide">
+      <h2>Обзор использованных технологий</h2>
 
-  <section class="slide">
-    <h2>Использованные технологии</h2>
-    <ul>
-      <li>JavaScript (SvelteKit, Nodemailer)</li>
-      <li>Go (PocketBase)</li>
-      <li>RabbitMQ</li>
-      <li>Redis</li>
-    </ul>
-  </section>
+      <table>
+        <tbody>
+          <tr>
+            <th>Название</th>
+            <th>Описание</th>
+            <th>ЯП</th>
+          </tr>
+          <tr>
+            <td>SvelteKit</td>
+            <td>Фреймворк для создания SSR веб-приложений</td>
+            <td>JavaScript</td>
+          </tr>
+          <tr>
+            <td>Nodemailer</td>
+            <td>Библиотека для работы с SMTP сервером</td>
+            <td>JavaScript</td>
+          </tr>
+          <tr>
+            <td>PocketBase</td>
+            <td>Open-source BaaS</td>
+            <td>Go</td>
+          </tr>
+          <tr>
+            <td>RabbitMQ</td>
+            <td>Open-source брокер сообщений</td>
+            <td>Erlang</td>
+          </tr>
+          <tr>
+            <td>Redis</td>
+            <td>Open-source NoSQL СУБД</td>
+            <td>C</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-  <section class="slide">
-    <h2 class="shout">
-      Что выходит в этом месяце?
-    </h2>
-  </section>
+    <section class="slide">
+      <h2 class="shout">Что выходит в этом месяце?</h2>
+    </section>
 
-  <section class="slide">
-    <p>
-      Картинка со списком кинопремьер
-    </p>
-  </section>
+    <section class="slide">
+      <p>Картинка со списком кинопремьер</p>
+    </section>
 
-  <!-- <section class="slide">
-    <h2>Варианты использования</h2>
-    <img style="max-height: 75%" src="images/use-case.drawio.svg" />
-  </section> -->
+    <section class="slide">
+      <h2 class="shout">Вопросы?</h2>
+    </section>
 
-  <!-- <section class="slide">
-    <h2>Архитектура системы</h2>
-    <img style="max-height: 75%" src="images/deployment.drawio.svg" />
-  </section> -->
+    <div class="progress"></div>
 
-  <!-- <section class="slide">
-    <h2>Потенциальная архитектура системы</h2>
-    <img style="max-height: 75%" src="images/expanded-deployment.drawio.svg" />
-  </section> -->
-
-  <!-- <section class="slide">
-    <h2 class="shout">Демонстрация</h2>
-  </section>
-  <section class="slide without-padding">
-    <div class="iframe-container">
-      <iframe src="https://movie-diary-dkrasiev.vercel.app/"></iframe>
-    </div>
-  </section> -->
-
-  <section class="slide">
-    <h2 class="shout">Вопросы?</h2>
-  </section>
-
-  <div class="progress"></div>
-
-  <script src="shower/shower.js"></script>
-</body>
-
+    <script src="shower/shower.js"></script>
+  </body>
 </html>
