@@ -4,7 +4,10 @@
     <title>Movie Diary</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css"></link>
+    <link
+      rel="stylesheet"
+      href="node_modules/@shower/ribbon/styles/styles.css"
+    />
     <style>
       .shower {
         --slide-ratio: calc(16 / 9);
@@ -13,9 +16,10 @@
     </style>
   </head>
 
-  <body class="shower list">
+  <body class="shower list grid">
     <header class="caption">
       <h1>Система мониторинга выхода кинопремьер</h1>
+
       <p>
         <a href="https://github.com/dkrasiev" target="_blank">
           Красиев Дмитрий Александрович
@@ -24,73 +28,87 @@
     </header>
 
     <section class="slide">
-      <h2>
-        Система мониторинга выхода<br />
-        кинопремьер
-      </h2>
+      <h2>Система мониторинга выхода кинопремьер</h2>
+
+      <p>Самарский государственный колледж</p>
 
       <p>
-        Министерство образования и науки Самарской области
+        <strong>Автор</strong>
         <br />
-        ГАПОУ СО «Самарский государственный колледж»
+        <span>Красиев Дмитрий Александрович</span>
+        <br />
+        <span>Выпусник группы ИС-19-04</span>
       </p>
 
       <p>
-        Работу выполнил:
+        <strong>Руководитель</strong>
         <br />
-        Выпускник ГАПОУ СО «СГК»
-        <br />
-        Красиев Дмитрий Александрович
+        <span>Кулагин Алексей Александрович </span>
       </p>
     </section>
 
     <section class="slide">
-      <img class="place" style="max-height: 100%" src="images/qr-code.svg" />
+      <h2 style="transform: translateX(-38%) rotate(-90deg)">Демонстрация</h2>
+      <img
+        class="place"
+        style="max-height: calc(100% - 1rem)"
+        src="images/qr-code-compat.png"
+      />
     </section>
 
     <section class="slide">
-      <div class="columns two">
-        <div>
-          <h2>Объект исследования</h2>
-          <p>Web-сервис для предприятия</p>
-        </div>
-        <div>
-          <h2>Предмет исследования</h2>
-          <p>Разработка Web-сервиса для мониторинга выхода кинопремьер</p>
-        </div>
-      </div>
+      <h2>Объект исследования</h2>
+      <p>WEB приложение</p>
+
+      <h2>Предмет исследования</h2>
+      <p>Разработка WEB приложения с использованием современных технологий</p>
     </section>
 
-    <section class="slide">
-      <div class="columns two">
-        <div>
-          <h2>Цель</h2>
-          <p>Упростить поиск и отслеживание новинок кино</p>
-        </div>
+    <!-- Вариант с двумя колонками -->
+    <!-- <section class="slide"> -->
+    <!--   <div class="columns two"> -->
+    <!--     <div> -->
+    <!--       <h2>Цель</h2> -->
+    <!--       <p>Упростить поиск и отслеживание новинок кино</p> -->
+    <!--     </div> -->
+    <!--     <div> -->
+    <!--       <h2>Задачи</h2> -->
+    <!--       <ul> -->
+    <!--         <li>Разработать удобный и доступный пользовательский интерфейс</li> -->
+    <!--         <li> -->
+    <!--           Создать систему для уведомления пользователей о выходе кинопремьер -->
+    <!--         </li> -->
+    <!--         <li>something else</li> -->
+    <!--       </ul> -->
+    <!--     </div> -->
+    <!--   </div> -->
+    <!-- </section> -->
 
-        <div>
-          <h2>Задачи</h2>
-          <ul>
-            <li>Lorem, ipsum.</li>
-            <li>Est, vitae!</li>
-            <li>Quibusdam, dolores.</li>
-            <li>Non, labore?</li>
-            <li>Corrupti, accusamus.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
     <section class="slide">
-      <h2>Использованные технологии</h2>
+      <h2>Цель</h2>
       <ul>
-        <li>SvelteKit (JavaScript)</li>
-        <li>Nodemailer (JavaScript)</li>
-        <li>PocketBase (Go)</li>
-        <li>RabbitMQ (Erlang)</li>
-        <li>Redis (C)</li>
+        <li>Упростить поиск и отслеживание новинок кино</li>
+      </ul>
+
+      <h2>Задачи</h2>
+      <ul>
+        <li>Разработать удобный и доступный пользовательский интерфейс</li>
+        <li>
+          Создать систему для уведомления пользователей о выохде кинопремьер
+        </li>
       </ul>
     </section>
+
+    <!-- Вариант с простым списком -->
+    <!-- <section class="slide"> -->
+    <!--   <h2>Использованные технологии</h2> -->
+    <!--   <ul> -->
+    <!--     <li>Node.js (JavaScript)</li> -->
+    <!--     <li>PocketBase (Go)</li> -->
+    <!--     <li>RabbitMQ (Erlang)</li> -->
+    <!--     <li>Redis (C)</li> -->
+    <!--   </ul> -->
+    <!-- </section> -->
 
     <section class="slide">
       <h2>Обзор использованных технологий</h2>
@@ -102,14 +120,10 @@
             <th>Описание</th>
             <th>ЯП</th>
           </tr>
+
           <tr>
             <td>SvelteKit</td>
             <td>Фреймворк для создания SSR веб-приложений</td>
-            <td>JavaScript</td>
-          </tr>
-          <tr>
-            <td>Nodemailer</td>
-            <td>Библиотека для работы с SMTP сервером</td>
             <td>JavaScript</td>
           </tr>
           <tr>
@@ -131,16 +145,16 @@
       </table>
     </section>
 
-    <section class="slide">
-      <h2 class="shout">Что выходит в этом месяце?</h2>
-    </section>
+    <!-- <section class="slide"> -->
+    <!--   <h2 class="shout">Что выходит в этом месяце?</h2> -->
+    <!-- </section> -->
+    <!---->
+    <!-- <section class="slide"> -->
+    <!--   <p>Картинка со списком кинопремьер</p> -->
+    <!-- </section> -->
 
     <section class="slide">
-      <p>Картинка со списком кинопремьер</p>
-    </section>
-
-    <section class="slide">
-      <h2 class="shout">Вопросы?</h2>
+      <h2 class="shout">Спасибо за внимание!</h2>
     </section>
 
     <div class="progress"></div>
