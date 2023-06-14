@@ -13,10 +13,14 @@
         --slide-ratio: calc(16 / 9);
         --color-key: #2196f3;
       }
+
+      img.diagram {
+        height: 24rem;
+      }
     </style>
   </head>
 
-  <body class="shower list grid">
+  <body class="shower list">
     <header class="caption">
       <h1>Система мониторинга выхода кинопремьер</h1>
 
@@ -35,9 +39,9 @@
       <p>
         <strong>Автор</strong>
         <br />
-        <span>Красиев Дмитрий Александрович</span>
+        <span>Студент группы ИС-19-04</span>
         <br />
-        <span>Выпусник группы ИС-19-04</span>
+        <span>Красиев Дмитрий Александрович</span>
       </p>
 
       <p>
@@ -51,9 +55,17 @@
       <h2 style="transform: translateX(-38%) rotate(-90deg)">Демонстрация</h2>
       <img
         class="place"
-        style="max-height: calc(100% - 1rem)"
+        style="max-height: calc(100% - 1rem); height: auto"
         src="images/qr-code-compat.png"
       />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout" style="font-size: 8rem">
+        <a href="https://movie-diary-dkrasiev.vercel.app">
+          https://movie-diary-dkrasiev.vercel.app
+        </a>
+      </h2>
     </section>
 
     <section class="slide">
@@ -94,7 +106,7 @@
       <ul>
         <li>Разработать удобный и доступный пользовательский интерфейс</li>
         <li>
-          Создать систему для уведомления пользователей о выохде кинопремьер
+          Создать систему для уведомления пользователей о выходе кинопремьер
         </li>
       </ul>
     </section>
@@ -128,7 +140,7 @@
           </tr>
           <tr>
             <td>PocketBase</td>
-            <td>Open-source BaaS</td>
+            <td>Open-source backend</td>
             <td>Go</td>
           </tr>
           <tr>
@@ -154,8 +166,59 @@
     <!-- </section> -->
 
     <section class="slide">
-      <h2>Some title</h2>
-      some text
+      <h2>Диаграмма вариантов использования</h2>
+      <img
+        class="diagram"
+        src="images/use-case.drawio.svg"
+        alt="use-case diagram"
+      />
+    </section>
+
+    <section class="slide">
+      <h2>Логическая схема базы данных</h2>
+      <img
+        class="diagram"
+        src="images/er-diagram.drawio.svg"
+        alt="entity relation diagram"
+      />
+    </section>
+
+    <section class="slide">
+      <h2>Диаграмма развертывания</h2>
+      <img
+        class="diagram"
+        src="images/deployment.drawio.svg"
+        alt="deployment diagram"
+      />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Рассылка уведомлений</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">0 18 * * *</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Отправлено/получено</h2>
+      <img
+        class="diagram"
+        src="images/Sent_vs_Opens.jpg"
+        alt="sent vs open diagram"
+      />
+    </section>
+
+    <section class="slide">
+      <h2>Пример уведомления</h2>
+      <img class="diagram" src="images/mail-example.png" alt="mail example" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">
+        <img style="width: 0.72em" src="https://shwr.me/pictures/logo.svg" />
+        <a>shwr.me</a>
+      </h2>
     </section>
 
     <section class="slide">
